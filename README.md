@@ -12,8 +12,8 @@ This type of resources are supported:
 module "key_pair" {
   source = "terraform-aws-modules/key_pair/aws"
 
-  aws_key_pair_name = "my-aws_key"
-  aws_key_pair_public_key = "ssh-rsa AAAAB3…S3 John Doe (rsa) <john@example.net>"
+  key_pair_name = "my-aws_key"
+  key_pair_public_key = "ssh-rsa AAAAB3…S3 John Doe (rsa) <john@example.net>"
 }
 ```
 
@@ -23,8 +23,8 @@ module "key_pair" {
 
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
-| aws_key_pair_name | Name of the SSH Key | string | - | yes |
-| aws_key_pair_public_key | Public key | string | - | yes |
+| key_pair_name | Name of the SSH Key | string | - | yes |
+| key_pair_public_key | Public key | string | - | yes |
 
 ## Outputs
 
