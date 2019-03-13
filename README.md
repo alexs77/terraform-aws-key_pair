@@ -11,7 +11,7 @@ This type of resources are supported:
 ```hcl
 module "key_pair" {
   source = "terraform-aws-modules/key_pair/aws"
-  
+
   aws_key_pair_name = "my-aws_key"
   aws_key_pair_public_key = "ssh-rsa AAAAB3…S3 John Doe (rsa) <john@example.net>"
 }
@@ -36,7 +36,7 @@ module "key_pair" {
 
 ## Authors
 
-Module managed by [Alexander Skwar](https://gitlab.com/alexs-77).
+Module managed by [Alexander Skwar](https://github.com/alexs77).
 
 ## License
 
