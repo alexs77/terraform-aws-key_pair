@@ -31,6 +31,7 @@ module "key_pair" {
 | Name | Description |
 |------|-------------|
 | key_name | Name of the SSH Key |
+| fingerprint | The MD5 public key fingerprint as specified in section 4 of RFC 4716 |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
