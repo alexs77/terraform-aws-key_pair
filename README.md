@@ -13,7 +13,7 @@ module "key_pair" {
   source = "terraform-aws-modules/key_pair/aws"
 
   key_name = "my-aws_key"
-  key_pair_public_key = "ssh-rsa AAAAB3...S3 John Doe (rsa) <john@example.net>"
+  public_key = "ssh-rsa AAAAB3<...>S3 John Doe (rsa) <john@example.net>"
 }
 ```
 
@@ -24,7 +24,7 @@ module "key_pair" {
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
 | key_name | The name for the key pair | string | - | yes |
-| key_pair_public_key | Public key | string | - | yes |
+| public_key | The public key material | string | - | yes |
 
 ## Outputs
 
@@ -32,7 +32,7 @@ module "key_pair" {
 |------|-------------|
 | key_name | The key pair name |
 | fingerprint | The MD5 public key fingerprint as specified in section 4 of RFC 4716 |
-| fp | The MD5 public key fingerprint as specified in section 4 of RFC 4716 |
+| fp | The MD5 public key fingerprint as specified in section 4 of RFC 4716 (identical to fingerprint) |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
@@ -43,3 +43,4 @@ Module managed by [Alexander Skwar](https://github.com/alexs77).
 ## License
 
 Apache 2 Licensed. See LICENSE for full details.
+
