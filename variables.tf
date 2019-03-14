@@ -3,6 +3,6 @@ variable "key_name" {
   description = "The key pair name"
 }
 
-variable "public_key" {
-  description = "The public key material"
+variable "key_pair_public_key" {
+  description = "Public key of the key pair"
 }
