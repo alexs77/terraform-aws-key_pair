@@ -13,7 +13,7 @@ module "key_pair" {
   source = "terraform-aws-modules/key_pair/aws"
 
   key_name = "my-aws_key"
-  key_pair_public_key = "ssh-rsa AAAAB3…S3 John Doe (rsa) <john@example.net>"
+  public_key = "ssh-rsa AAAAB3…S3 John Doe (rsa) <john@example.net>"
 }
 ```
 
@@ -24,7 +24,7 @@ module "key_pair" {
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
 | key_name | The key pair name | string | - | yes |
-| key_pair_public_key | Public key | string | - | yes |
+| public_key | The public key material | string | - | yes |
 
 ## Outputs
 
