@@ -32,7 +32,6 @@ module "key_pair" {
 |------|-------------|
 | key_name | The key pair name |
 | fingerprint | The MD5 public key fingerprint as specified in section 4 of RFC 4716 |
-| fp | The MD5 public key fingerprint as specified in section 4 of RFC 4716 (identical to fingerprint) |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
