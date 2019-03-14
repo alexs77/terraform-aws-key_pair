@@ -12,8 +12,8 @@ This type of resources are supported:
 module "key_pair" {
   source = "terraform-aws-modules/key_pair/aws"
 
-  key_pair_name = "my-aws_key"
-  key_pair_public_key = "ssh-rsa AAAAB3…S3 John Doe (rsa) <john@example.net>"
+  key_name = "my-aws_key"
+  key_pair_public_key = "ssh-rsa AAAAB3...S3 John Doe (rsa) <john@example.net>"
 }
 ```
 
@@ -23,14 +23,14 @@ module "key_pair" {
 
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
-| key_pair_name | Name of the SSH Key | string | - | yes |
+| key_name | The name for the key pair | string | - | yes |
 | key_pair_public_key | Public key | string | - | yes |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| key_pair_name | Name of the SSH Key |
+| key_name | The key pair name |
 | fingerprint | The MD5 public key fingerprint as specified in section 4 of RFC 4716 |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
